@@ -10,8 +10,8 @@ public class Exemple implements ContentHandler{
 	}
 
 	@Override
-	public void defaultLine(String handler) {
-		System.out.println("le fichier "+handler+" a bien ete executé !");
+	public void defaultLine(String handler,int compteur) {
+		System.out.println("le fichier"+handler+ " contient "+compteur+" lignes.");
 	}
 
 

@@ -3,6 +3,6 @@
 
 public interface ContentHandler {
 	
-	public void defaultLine(String handler);
+	public void defaultLine(String handler,int compteur);
 
 }

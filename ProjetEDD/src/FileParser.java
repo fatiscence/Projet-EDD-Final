@@ -8,14 +8,14 @@ public class FileParser{
 	public void parse(String fichier,ContentHandler handler){
 		BufferedReader lect ;
 		handler = new Exemple();
-		
+		int s=0;
 		try
 		{
 			lect = new BufferedReader(new FileReader(fichier)) ;
 			while (lect.ready()==true) 
 			{  
 				System.out.println(lect.readLine());
-				
+				s++;
 			}//while
 		}//try
 		catch (NullPointerException a)
@@ -26,6 +26,7 @@ public class FileParser{
 		{
 			System.out.println("Problème d'IO");
 		}
+		handler.defaultLine(fichier, s);
 	}
 	
 
