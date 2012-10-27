@@ -1,7 +1,20 @@
-******************************
-*                            *
-*                            *
-*          It Work !!!       *
-*                            *
-*                            *
-******************************
+Brest est une commune française,
+chef-lieu d’arrondissement du département
+du Finistère dans la région Bretagne.
+# premier commentaire
+C'est un port important, deuxième port
+militaire en France après Toulon,
+à l'extrémité ouest de la Bretagne.
+# deuxiéme commentaire
+Avec ses 141 315 habitants, les Brestois
+et les Brestoises, et une communauté urbaine
+comptant 221 600 habitants, Brest est la 
+première agglomération de l'ouest breton 
+rayonnant sur un bassin de plus d'un million 
+d'habitants1, deuxième de région Bretagne 
+# troisième commentaire
+derrière Rennes et la 22e commune la plus 
+peuplée de France. Bien que Brest soit 
+la ville la plus peuplée du Finistère, 
+la préfecture du département est Quimper 
+qui est une ville de taille plus modeste.

@@ -14,6 +14,12 @@ public class Exemple implements ContentHandler{
 		System.out.println("le fichier"+handler+ " contient "+compteur+" lignes.");
 	}
 
+	@Override
+	public void commentLine(String comment, int compteur) {
+		System.out.println("total des commentaire dans "+comment+ " : "+ compteur);
+		
+	}
+
 
 
 }
