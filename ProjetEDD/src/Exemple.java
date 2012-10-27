@@ -10,8 +10,8 @@ public class Exemple implements ContentHandler{
 	}
 
 	@Override
-	public void defaultLine(String handler,int compteur) {
-		System.out.println("le fichier"+handler+ " contient "+compteur+" lignes.");
+	public void defaultLine(String handler,int compteur1,int compteur2) {
+		System.out.println("le fichier"+handler+ ".Yaml contient "+compteur1+" lignes en total est "+compteur2+" commentaires");
 	}
 
 
