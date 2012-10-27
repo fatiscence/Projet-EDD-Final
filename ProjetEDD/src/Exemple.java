@@ -5,20 +5,15 @@ public class Exemple implements ContentHandler{
 
 	public static void main(String[] arg) throws java.io.IOException {
 		FileParser fp =new FileParser();
-		fp.parse("test.txt",null);
+		fp.parse("fich.xml",null);
 		
 	}
 
 	@Override
-	public void defaultLine(String handler,int compteur) {
-		System.out.println("le fichier"+handler+ " contient "+compteur+" lignes.");
+	public void defaultLine(String handler) {
+		System.out.println("ce fichier"+handler+ " est un fichier XML");
 	}
 
-	@Override
-	public void commentLine(String comment, int compteur) {
-		System.out.println("total des commentaire dans "+comment+ " : "+ compteur);
-		
-	}
 
 
 

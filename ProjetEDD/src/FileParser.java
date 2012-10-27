@@ -8,18 +8,14 @@ public class FileParser{
 	public void parse(String fichier,ContentHandler handler){
 		BufferedReader lect ;
 		handler = new Exemple();
-		int s=0,c=1;
+
 		try
 		{
 			lect = new BufferedReader(new FileReader(fichier)) ;
-			while (lect.ready()==true) 
-			{  
-				System.out.println(lect.readLine());
-				s++;
-				if(lect.readLine().startsWith("#")){
-				c++; 
-				}
-			}//while
+			String ch=lect.readLine().trim();
+			if(ch.equals("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")){
+				handler.defaultLine(fichier);	
+				}//if
 		}//try
 		catch (NullPointerException a)
 		{
@@ -29,8 +25,6 @@ public class FileParser{
 		{
 			System.out.println("Problème d'IO");
 		}
-		handler.defaultLine(fichier, s);
-		handler.commentLine(fichier, c);
 	}
 	
 
