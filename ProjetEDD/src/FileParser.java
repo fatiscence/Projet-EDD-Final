@@ -12,10 +12,15 @@ public class FileParser{
 		try
 		{
 			lect = new BufferedReader(new FileReader(fichier)) ;
-			String ch=lect.readLine().trim();
-			if(ch.equals("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")){
-				handler.defaultLine(fichier);	
-				}//if
+			
+			// si l'utilisateur a entré un point
+			if (fichier.lastIndexOf(".") > 0) {
+				// On récupère l'extension du fichier
+				String ext = fichier.substring(fichier.lastIndexOf(".")).trim();
+				// Si le fichier n'est pas en .txt on le met en .txt
+				if (ext.equals(".cvs")) {
+					handler.defaultLine(fichier);
+				}}
 		}//try
 		catch (NullPointerException a)
 		{
